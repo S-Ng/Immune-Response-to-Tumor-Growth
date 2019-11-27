@@ -47,5 +47,34 @@ if model == 0 % mouse
         end
     end
 elseif model == 1 % human
-    error('human data not input yet');    
+    
+    a = 5.14*10^-1;
+    b = 1.02*10^-9;
+    c = 3.23*10^-1;
+    if variation ~= 5 % patient 9
+    d = 5.80;
+    elseif variation ~= 6 % patient 10
+    d = 4.23;
+    end
+    sigma = 1.3*10^4;
+    if variation ~= 5 % patient 9
+    lambda = 1.36;
+    elseif variation ~= 6 % patient 10
+    lambda = 1.43;
+    end
+    f = 4.12*10^-2;
+    g = 2.5*10^-2;
+    h = 2.02*10^7;
+    j = 3.75*10^-2;
+    k = 2.0*10^7;
+    m = 2.00*10^-2;
+    q = 3.42*10^-10;
+    p = 1.00*10^-7;
+    if variation ~= 5 % patient 9
+    s = 2.5*10^-1;
+    elseif variation ~= 6 % patient 10
+    s = 3.6*10^-1;
+    end
+    r = 1.1*10^-7;
+ end
 end
